@@ -27,12 +27,12 @@ regressor.fit(X_train, y_train)
 y_prediction = regressor.predict(X_test)
 
 # FUNCTION FOR PREDICTING SALARY
-#def predict_salary(experience):
-#   salary = int(regressor.predict([[experience]]))
-#    print("Experience: {} || Predicted Salary: {}".format(experience, salary))
+def predict_salary(experience):
+   salary = int(regressor.predict([[experience]]))
+   print("Experience: {} || Predicted Salary: {}".format(experience, salary))
 
-# TAKING EXPERIENCE AS USER INPUT
-#experience = float(input("Experience: "))
-#predict_salary(experience)
+#TAKING EXPERIENCE AS USER INPUT
+experience = float(input("Experience: "))
+predict_salary(experience)
 
 
